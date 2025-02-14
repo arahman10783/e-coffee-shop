@@ -1,0 +1,16 @@
+.heading {
+  font-size: 32px;
+}
+.heading span{
+  position: relative;
+}
+.heading span::after{
+  content: "";
+  width: 100%;
+  position: absolute;
+  background: var(--orange);
+  height: 3px;
+  display: inline-block;
+  left: 0px;
+  bottom: 0px;
+}
