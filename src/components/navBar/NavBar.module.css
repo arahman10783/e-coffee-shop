@@ -1,0 +1,19 @@
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  padding-inline: 200px;
+  box-sizing: border-box;
+  margin-top: 25px;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.navLink{
+  color: var(--brown);
+}

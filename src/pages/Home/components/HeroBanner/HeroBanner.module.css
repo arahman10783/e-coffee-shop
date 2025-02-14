@@ -1,0 +1,32 @@
+.bannerContainer{
+  padding-inline: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.bannerText{
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.bannerText h1{
+  color: var(--brown);
+  font-size: 48px;
+}
+
+.bannerText h1 span{
+  color: var(--orange);
+}
+
+.bannerText p{
+  font-size: 18px;
+  color: gray;
+}
+
+.ctaContainer{
+  display: flex;
+  justify-content: space-evenly;
+}

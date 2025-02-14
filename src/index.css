@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: Poppins;
+  font-family: "Poppins";
   src: url('./assets/fonts/Poppins.ttf');
 }
 
@@ -21,13 +21,18 @@
     text-align: left;
     text-decoration: none;
     text-indent: 0;
+    font-family: 'Poppins', 'Courier New';
 }
 
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  font-family: Poppins 'Courier New';
+  font-family: Poppins, 'Courier New';
+}
+
+
+#root{
+  width: 100%;
+  position: relative;
 }
