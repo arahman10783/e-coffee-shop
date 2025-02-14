@@ -1,5 +1,26 @@
 :root {
+  --brown : #2F2105;
+  --orange: #FF902A;
+  --baleOrange: #F9D9AA;
+  --yellow: #F9D9AA;
+}
 
+@font-face {
+  font-family: Poppins;
+  src: url('./assets/fonts/Poppins.ttf');
+}
+
+*{
+    /*Reset's every elements apperance*/
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
 }
 
 body {
@@ -8,4 +29,5 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: Poppins 'Courier New';
 }

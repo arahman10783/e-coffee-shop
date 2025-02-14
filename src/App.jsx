@@ -7,11 +7,6 @@ import {Shop} from './pages/Shop'
 function App() {
   return (
       <BrowserRouter>
-        <div>
-          <NavLink to="/"> Home</NavLink>
-          <NavLink to="/about"> About</NavLink>
-          <NavLink to="/shop"> Shop</NavLink>
-        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

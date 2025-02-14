@@ -1,0 +1,23 @@
+.button{
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 33px;
+  cursor: pointer;
+  padding: 12px 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonBg{
+  background-color: var(--brown);
+  color: #FFF;
+}
+
+.buttonBorder{
+  color: var(--orange);
+  border: solid 2px var(--orange);
+}
+
+.textOnly{
+  color: var(--yellow);
+}
