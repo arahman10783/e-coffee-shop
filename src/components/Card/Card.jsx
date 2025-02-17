@@ -2,9 +2,23 @@ import style from './Card.module.css'
 import {Icon} from '../Icon'
 import cart from '../../assets/images/carticon-white.svg'
 import star from '../../assets/images/akar-icons_star.svg'
+import { useContext } from 'react'
+import { SelectedProductContext } from '../../context/selectedProducts'
 
-export default function Card(props) {
-  const {image, title, price, rate, describe} = props
+export default function Card({product}) {
+  const {id, image, title, price, rate, describe} = product
+  const {addProduct} = useContext(SelectedProductContext)
+  
+  function cartClickHandler() {
+    const product = {
+      id,
+      title,
+      price,
+      image,
+    }
+    addProduct(product)
+  }
+
   return (
     <div className= {style.card}>
       <div className={style.imageContainer}>
@@ -19,7 +33,9 @@ export default function Card(props) {
       </div>
       <div className={style.cardTxt}>
         <span className={style.describe}>{describe}</span>
-        <Icon width="10px" icon={cart}/>
+        <button onClick={cartClickHandler}>
+        <Icon width="10px" icon={cart} />
+        </button>
       </div>
     </div>
   )

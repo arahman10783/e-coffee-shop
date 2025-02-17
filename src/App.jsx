@@ -4,10 +4,13 @@ import {Shop} from './pages/Shop'
 import { NavBar } from './components/navBar'
 import style from './App.module.css'
 import { Checkout } from './pages/checkout'
+import {SelectedProductsProvider} from './context/selectedProducts'
 
 
 function App() {
+  
   return (
+    <SelectedProductsProvider>
       <BrowserRouter>
         <div className={style.container}>
             <NavBar />
@@ -18,6 +21,7 @@ function App() {
             </Routes>
         </div>
       </BrowserRouter>
+    </SelectedProductsProvider>
 
   )
 }

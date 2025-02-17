@@ -16,7 +16,7 @@ export default function NavBar() {
           <NavLink className={style.navLink} to="/shop">Shop</NavLink>
           <NavLink className={style.navLink} to="/checkout">
             <Icon width="25px" icon={cart} bg="transparent"/>
-            <ItemsCount count={5} />
+            <ItemsCount />
           </NavLink>
           
       </div>

@@ -29,14 +29,10 @@ export default function MainProducts() {
           error && <p>{error}</p>
         }
         {
-          products.map(({id,title,description, image, rate, price}) => (
+          products.map((product) => (
             <Card 
-            key={id}
-            image={image}
-            title={title}
-            price = {price}
-            rate ={rate} 
-            describe={description}
+            key={product.id}
+            product={product}
             />
           ))
         }

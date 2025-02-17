@@ -1,8 +1,14 @@
+import { useContext } from 'react'
 import style from './ItemsCount.module.css'
+import { SelectedProductContext } from '../../../../context/selectedProducts'
 
 
-export default function ItemCounts({count}) {
+export default function ItemCounts() {
+  const {total} = useContext(SelectedProductContext)
+
   return (
-    <div className={style.count}>{count}</div>
+    total > 0 
+    ? <div className={style.count}>{total}</div>
+    : null
   )
 }

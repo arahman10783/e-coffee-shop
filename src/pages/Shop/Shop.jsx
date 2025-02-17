@@ -28,16 +28,12 @@ export default function Shop() {
           error && <p>{error}</p>
         }
       {
-        products.map(({id,title,description, image, rate, price}) => (
-            <Card 
-              key={id}
-              image={image}
-              title={title}
-              price = {price}
-              rate ={rate} 
-              describe={description}
-            />
-          ))
+      products.map((product) => (
+        <Card 
+        key={product.id}
+        product={product}
+        />
+      ))
           }
       </div>
     </div>
