@@ -34,7 +34,7 @@ export default function Card({product}) {
       <div className={style.cardTxt}>
         <span className={style.describe}>{describe}</span>
         <button onClick={cartClickHandler}>
-        <Icon width="10px" icon={cart} />
+          <Icon width="10px" icon={cart} />
         </button>
       </div>
     </div>
