@@ -11,9 +11,13 @@
 .nav{
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 200px;
+  margin-inline-end: 20px;
+  height: 25px;
+  vertical-align: middle;
 }
 
 .navLink{
   color: var(--brown);
+  position: relative;
 }

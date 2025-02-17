@@ -1,0 +1,16 @@
+.count {
+  background-color: var(--orange);
+  border: solid 2px #FFF;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  display: flex;
+  justify-content: center;
+  /* color: #FFF; */
+  font-size: 15px;
+  line-height: 26px;
+  /* vertical-align: middle; */
+}
