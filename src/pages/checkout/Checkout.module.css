@@ -2,3 +2,19 @@
   padding-inline: 200px;
   padding-top: 50px;
 }
+
+
+.orderBtn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.total{
+  display: flex;
+  justify-content: end;
+  padding-inline-end: 20px;
+  border-top: solid 5px var(--orange);
+  font-size: 18px;
+  padding-top: 16px;
+}

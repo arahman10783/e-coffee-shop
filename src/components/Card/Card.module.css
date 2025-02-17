@@ -54,3 +54,7 @@
   left: 10px;
   box-sizing: border-box;
 }
+
+.ratePadge img{
+  width: 12px;
+}

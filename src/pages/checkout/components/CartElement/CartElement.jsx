@@ -7,7 +7,7 @@ export default function CartElement({image, productName, price}) {
         <img src={image} alt={productName}/>
       </div>
       <div className={style.productName}>{productName}</div>
-      <div className={style.price}>{price}</div>
+      <div className={style.price}>{`${price}$`}</div>
       <div className={style.counter}>
         +
         0
