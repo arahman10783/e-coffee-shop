@@ -28,7 +28,17 @@ export function SelectedProductsProvider ({children}){
         ])
       }
     }
-    
+
+    function updateCount(id, newCount) {
+      const product = selectedProducts.find(p => p.id === id)
+      setSelectedProducts([
+        ...selectedProducts.filter(p => p.id !== id),
+        {
+          ...product,
+          count : newCount
+        }
+      ])
+    }
     function deleteProduct(id){
       setSelectedProducts((prevState) => [
         ...prevState.filter(p => p.id !== id)
@@ -60,7 +70,8 @@ export function SelectedProductsProvider ({children}){
           addProduct, 
           total,
           totalPrice,
-          deleteProduct
+          deleteProduct,
+          updateCount
         }}>
         {children}
       </SelectedProductContext.Provider>

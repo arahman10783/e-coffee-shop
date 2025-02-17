@@ -1,0 +1,10 @@
+.counter{
+  flex-grow: 1;
+}
+
+.counterButton{
+  width: 25px;
+  margin-inline: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
