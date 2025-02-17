@@ -8,6 +8,7 @@
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: #FFF;
+  margin-block: 15px;
 }
 
 .imageContainer{

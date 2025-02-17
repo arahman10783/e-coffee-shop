@@ -9,8 +9,9 @@
   width: 100%;
   position: absolute;
   background: var(--orange);
-  height: 3px;
+  height: 5px;
   display: inline-block;
   left: 0px;
   bottom: 0px;
+  border-radius: 12px;
 }

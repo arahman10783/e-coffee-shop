@@ -8,16 +8,16 @@ import style from './App.module.css'
 
 function App() {
   return (
-    <div className={style.container}>
       <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/shop" element={<Shop />} />
-        </Routes>
+        <div className={style.container}>
+            <NavBar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/shop" element={<Shop />} />
+            </Routes>
+        </div>
       </BrowserRouter>
-    </div>
 
   )
 }
